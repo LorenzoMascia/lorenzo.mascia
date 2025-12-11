@@ -10,7 +10,8 @@ Sito web personale di Lorenzo Mascia - Full-stack developer. Un design minimale 
 - 🎯 Effetto sottolineatura animata
 - 📊 Timeline della carriera con linee animate
 - 🚀 Sezione progetti con hover effects
-- ☀️ Tema chiaro e pulito
+- 🌙 Tema dark elegante
+- 🎄 **Speciale Natale 2024**: Albero di Natale 3D animato in canvas come background + Effetto neve interattivo cliccando sulla foto profilo!
 - 💫 Easter egg nascosto (prova il Konami code!)
 
 ## 🚀 Deploy su GitHub Pages
@@ -75,12 +76,14 @@ Modifica le variabili CSS in `style.css`:
 
 ```css
 :root {
-    --color-background: oklch(0.98 0.01 250);  /* Colore sfondo (bianco) */
-    --color-text: oklch(0.2 0.02 250);         /* Colore testo (scuro) */
+    --color-background: oklch(0.15 0.02 250);  /* Colore sfondo (dark) */
+    --color-text: oklch(0.95 0.02 250);        /* Colore testo (chiaro) */
     --color-accent: oklch(0.59 0.17 154);      /* Colore accento (verde) */
-    --color-secondary: oklch(0.5 0.05 250);    /* Colore secondario */
+    --color-secondary: oklch(0.7 0.1 200);     /* Colore secondario */
 }
 ```
+
+> **Nota**: Per il periodo natalizio 2024, il sito usa un tema dark. Per tornare al tema chiaro dopo le feste, modifica i valori di `--color-background` e `--color-text`.
 
 ### Foto profilo
 
@@ -97,10 +100,13 @@ La foto profilo è già configurata con `LORE.png`. Per cambiarla:
 
 ```
 lorenzo.mascia/
-├── index.html      # Struttura HTML principale
-├── style.css       # Stili e animazioni
-├── script.js       # Interazioni JavaScript
-├── LORE.png        # Foto profilo
+├── index.html      # Struttura HTML principale + canvas background
+├── style.css       # Stili e animazioni (tema dark natalizio) + canvas styling
+├── script.js       # Canvas 3D tree + interazioni + effetto neve su click foto
+├── LORE.png        # Foto profilo (clickabile per neve)
+├── examples/       # Esempi di riferimento per animazioni
+│   ├── tree_example
+│   └── snow_example
 └── README.md       # Questo file
 ```
 
@@ -109,6 +115,8 @@ lorenzo.mascia/
 - **Sottolineatura animata**: Passa il mouse sulle parole sottolineate per vedere l'effetto wobble
 - **Timeline**: Clicca sui punti della timeline per effetti di ripple
 - **Project cards**: Hover per vedere le animazioni
+- **🎄 Albero di Natale 3D**: Background animato con particelle canvas che creano un albero 3D rotante con neve
+- **❄️ Neve Interattiva**: Clicca sulla foto profilo per far nevicare! (dura 30 secondi)
 - **Konami code**: Prova a digitare: ↑ ↑ ↓ ↓ ← → ← → B A
 
 ## 🛠️ Tecnologie utilizzate
@@ -116,9 +124,11 @@ lorenzo.mascia/
 - HTML5
 - CSS3 (con variabili CSS e animazioni moderne)
 - JavaScript vanilla (ES6+)
+- **GSAP 3.12** per animazioni avanzate dell'albero 3D canvas
+- **Canvas 2D** per l'albero di Natale 3D rotante con particelle e neve
 - SVG per grafiche vettoriali
 - Intersection Observer API
-- No framework o librerie esterne richieste!
+- Web Animations API per l'effetto neve interattivo
 
 ## 📱 Browser supportati
 
@@ -137,8 +147,20 @@ lorenzo.mascia/
 
 4. **Custom Domain**: Puoi collegare un dominio personalizzato nelle impostazioni di GitHub Pages
 
+## 🎄 Versione Natalizia 2024
+
+Questa versione include decorazioni natalizie speciali:
+- **Albero 3D Canvas**: Background animato con ~1000 particelle che creano un albero di Natale rotante in 3D con neve che cade continuamente
+- **Effetto neve interattivo**: Click sulla foto profilo per far nevicare sul sito intero (dura 30 secondi)
+- **Tema dark**: Sfondo nero puro per massimo contrasto con l'albero luminoso
+- **Animazione intro**: L'albero "cresce" dal basso all'apertura della pagina
+- **Rotazione continua**: L'albero ruota lentamente su se stesso creando un effetto 3D ipnotico
+- **Neve permanente**: Fiocchi di neve che cadono costantemente sul background canvas
+
+Per rimuovere le decorazioni natalizie dopo le feste, cerca il commit: `feat: 🎄 christmas-2024-special-edition` e reverta le modifiche relative all'albero canvas e alla neve.
+
 ---
 
 **Lorenzo Mascia** - Full-stack Developer
 
-Made with ❤️ and lots of ☕
+🎄 Buon Natale 2024! ❄️
