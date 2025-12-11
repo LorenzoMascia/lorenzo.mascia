@@ -1,6 +1,6 @@
-# Sito Web Personale
+# Lorenzo Mascia - Sito Web Personale
 
-Un sito web personale minimale e moderno con animazioni fluide e design pulito.
+Sito web personale di Lorenzo Mascia - Full-stack developer. Un design minimale e moderno con animazioni fluide e tema chiaro.
 
 ## ✨ Caratteristiche
 
@@ -10,18 +10,18 @@ Un sito web personale minimale e moderno con animazioni fluide e design pulito.
 - 🎯 Effetto sottolineatura animata
 - 📊 Timeline della carriera con linee animate
 - 🚀 Sezione progetti con hover effects
-- 🌙 Dark theme di default
+- ☀️ Tema chiaro e pulito
 - 💫 Easter egg nascosto (prova il Konami code!)
 
 ## 🚀 Deploy su GitHub Pages
 
 ### Metodo 1: Repository dedicato (username.github.io)
 
-1. Crea un nuovo repository su GitHub chiamato esattamente `tuousername.github.io` (sostituisci "tuousername" con il tuo username GitHub)
+1. Crea un nuovo repository su GitHub chiamato esattamente `lorenzomascia.github.io`
 
 2. Inizializza il repository locale:
    ```bash
-   cd personal-website
+   cd lorenzo.mascia
    git init
    git add .
    git commit -m "Initial commit: Personal website"
@@ -30,24 +30,24 @@ Un sito web personale minimale e moderno con animazioni fluide e design pulito.
 3. Collega e carica il repository:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/tuousername/tuousername.github.io.git
+   git remote add origin https://github.com/lorenzomascia/lorenzomascia.github.io.git
    git push -u origin main
    ```
 
-4. Il tuo sito sarà disponibile automaticamente a: `https://tuousername.github.io`
+4. Il sito sarà disponibile automaticamente a: `https://lorenzomascia.github.io`
 
 ### Metodo 2: Branch gh-pages in un repository esistente
 
-1. Crea un nuovo repository su GitHub (es. `personal-site`)
+1. Crea un nuovo repository su GitHub (es. `lorenzo-mascia-portfolio`)
 
 2. Inizializza e carica:
    ```bash
-   cd personal-website
+   cd lorenzo.mascia
    git init
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/tuousername/personal-site.git
+   git remote add origin https://github.com/lorenzomascia/lorenzo-mascia-portfolio.git
    git push -u origin main
    ```
 
@@ -55,7 +55,7 @@ Un sito web personale minimale e moderno con animazioni fluide e design pulito.
 4. Sotto "Source" seleziona "main" branch e "/" (root) folder
 5. Clicca "Save"
 
-6. Il tuo sito sarà disponibile a: `https://tuousername.github.io/personal-site`
+6. Il sito sarà disponibile a: `https://lorenzomascia.github.io/lorenzo-mascia-portfolio`
 
 ## 🎨 Personalizzazione
 
@@ -63,11 +63,11 @@ Un sito web personale minimale e moderno con animazioni fluide e design pulito.
 
 Modifica `index.html`:
 
-- **Nome**: Cerca `<h1 class="hero-title">Il Tuo Nome</h1>` e sostituisci con il tuo nome
-- **Descrizione**: Modifica il testo nella sezione `.hero-description`
-- **Timeline**: Aggiorna gli anni e le fasi nella sezione `.timeline-labels`
-- **Progetti**: Modifica i link, nomi e tecnologie nella sezione `.projects-grid`
-- **Social Links**: Aggiorna i link GitHub, LinkedIn ed email nel footer
+- **Nome**: Lorenzo Mascia (già configurato)
+- **Descrizione**: Modifica il testo nella sezione `.hero-description` secondo le tue preferenze
+- **Timeline**: Aggiorna gli anni e le fasi nella sezione `.timeline-labels` con il tuo percorso
+- **Progetti**: Modifica i link, nomi e tecnologie nella sezione `.projects-grid` con i tuoi progetti reali
+- **Social Links**: Aggiorna i link GitHub, LinkedIn ed email nel footer con i tuoi profili reali
 
 ### Colori
 
@@ -75,39 +75,32 @@ Modifica le variabili CSS in `style.css`:
 
 ```css
 :root {
-    --color-background: oklch(0.15 0.02 250);  /* Colore sfondo */
-    --color-text: oklch(0.95 0.02 250);        /* Colore testo */
+    --color-background: oklch(0.98 0.01 250);  /* Colore sfondo (bianco) */
+    --color-text: oklch(0.2 0.02 250);         /* Colore testo (scuro) */
     --color-accent: oklch(0.59 0.17 154);      /* Colore accento (verde) */
-    --color-secondary: oklch(0.7 0.1 200);     /* Colore secondario */
+    --color-secondary: oklch(0.5 0.05 250);    /* Colore secondario */
 }
 ```
 
-### Aggiungere la tua foto
+### Foto profilo
 
-Sostituisci il `<svg>` nella sezione `.profile-image` con:
+La foto profilo è già configurata con `LORE.png`. Per cambiarla:
+
+1. Sostituisci il file `LORE.png` con la tua nuova foto
+2. Oppure modifica l'attributo `src` in `index.html`:
 
 ```html
-<img src="tua-foto.jpg" alt="Il Tuo Nome">
-```
-
-E aggiungi questo CSS:
-
-```css
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
+<img src="tua-nuova-foto.jpg" alt="Lorenzo Mascia">
 ```
 
 ## 📁 Struttura dei file
 
 ```
-personal-website/
+lorenzo.mascia/
 ├── index.html      # Struttura HTML principale
 ├── style.css       # Stili e animazioni
 ├── script.js       # Interazioni JavaScript
+├── LORE.png        # Foto profilo
 └── README.md       # Questo file
 ```
 
@@ -144,14 +137,8 @@ personal-website/
 
 4. **Custom Domain**: Puoi collegare un dominio personalizzato nelle impostazioni di GitHub Pages
 
-## 📝 Licenza
-
-Sentiti libero di usare questo template per il tuo sito personale!
-
-## 🤝 Contribuire
-
-Se trovi bug o hai suggerimenti, sentiti libero di aprire un issue o una pull request.
-
 ---
+
+**Lorenzo Mascia** - Full-stack Developer
 
 Made with ❤️ and lots of ☕
