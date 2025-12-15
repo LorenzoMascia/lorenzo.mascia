@@ -100,6 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initProjectsObserver();
     initSmoothScroll();
     addCursorEffect();
+
+    // Start snow effect automatically
+    startSnow();
 });
 
 // Timeline interactions
@@ -399,17 +402,4 @@ function startSnow() {
     }, 30000);
 }
 
-// Add click event to profile image for snow effect
-document.addEventListener('DOMContentLoaded', () => {
-    const profileImage = document.getElementById('profileImage');
-    if (profileImage) {
-        profileImage.addEventListener('click', () => {
-            startSnow();
-            // Add a little shake animation to the image
-            profileImage.style.animation = 'none';
-            setTimeout(() => {
-                profileImage.style.animation = 'float 6s ease-in-out infinite';
-            }, 10);
-        });
-    }
-});
+// Snow effect is now automatically active on page load
